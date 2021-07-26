@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index']);
 
-Route::get('/', [PortfolioController::class, 'index']);
+Route::get('/portfolio', [PortfolioController::class, 'index']);
 
-Route::get('/', [ContactController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index']);
 
-Route::get('/', [BlogController::class, 'index']);
+Route::get('/blog', [BlogController::class, 'index']);

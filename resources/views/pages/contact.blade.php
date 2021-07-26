@@ -1,3 +1,4 @@
+@extends('template.main')
 @include('partials.header')
 
 <div class="hero hero-max-720 hero-contact background-overlay">
