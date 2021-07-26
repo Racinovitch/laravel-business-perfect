@@ -24,3 +24,8 @@ Route::get('/portfolio', [PortfolioController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
 
 Route::get('/blog', [BlogController::class, 'index']);
+
+
+Route::get('/backoff', function(){
+    return view('pages.createportfolio');
+});
