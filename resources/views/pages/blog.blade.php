@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section ('content')
-@include('partials.header')
+
 
 <main id="main" class="site-main">
 
@@ -13,7 +13,7 @@
 
             <h1 class="section-title-big">Blog</h1>
             <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        
+
         </div>
 
         <ol class="breadcrumb">
@@ -33,9 +33,9 @@
 
                         <h3><a class="post-title" href="blog-post.html">Is Passion Good For Business?</a></h3>
 
-                                
+
                         <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        
+
                     </div><!-- /.post-content -->
 
                 </div><!-- /.blog-post -->
@@ -47,9 +47,9 @@
 
                         <h3><a class="post-title" href="blog-post.html">Is Passion Good For Business?</a></h3>
 
-                                
+
                         <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        
+
                     </div><!-- /.post-content -->
 
                 </div><!-- /.blog-post -->
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-    
+
 </section><!-- /.section-blog -->
 
 <section class="social-networks">
@@ -73,13 +73,13 @@
             <a class="white-text gray-bg message-bg" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 
         </div>
-        
+
     </div>
-    
+
 </section><!-- /.social-networks -->
 
 </main><!-- /.site-main -->
 
-@include('partials.footer')
+
 
 @endsection

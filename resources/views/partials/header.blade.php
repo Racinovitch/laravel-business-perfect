@@ -6,22 +6,22 @@
 
         <div class="navbar-header">
             
-            <a href="index.html" class="site-title yellow-text">Business Perfect</a>
+            <a href="{{asset('/')}}" class="site-title yellow-text">Business Perfect</a>
 
         </div><!-- /.navbar-header -->
 
         <div class="main-menu" id="perfect-navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a href="index.html">Home</a></li>
+                    <a href="{{asset('/')}}">Home</a></li>
                 <li>
-                    <a href="blog.html">Blog </a>
+                    <a href="{{asset('/blog')}}">Blog </a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Portfolio</a>                                
+                    <a href="{{asset('/portfolio')}}">Portfolio</a>                                
                 </li>
                 <li class="active">
-                    <a href="contact.html">Contact</a>
+                    <a href="{{asset('/contact')}}">Contact</a>
                 </li> 
             </ul><!-- /.navbar-nav -->
         </div><!-- /.navbar-collapse -->

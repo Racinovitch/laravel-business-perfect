@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section ('content')
-@include('partials.header')
+
 
 <main id="main" class="site-main">
 
@@ -13,20 +13,23 @@
 
             <div class="container-fluid">
             	<div class="row" id="grid">
-            		<div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["uiux"]'>
+                    @foreach ($dataPortfolio as $item)
+                    <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["uiux"]'>
                         <a class="portfolio-link" href="#">
-                            <img src="assets/img/portfolio-1.jpg" alt="" class="img-carousel">
+                            <img src="{{asset($item->image)}}" alt="" class="img-carousel">
                             <div class="portfolio-info">
                                 <div class="portfolio-info-top">
-                                    <h3>Business Perfect item</h3>
+                                    <h3>{{$item->titre}}</h3>
                                 </div><!-- /.portfolio-info-top -->
                                 <div class="portfolio-info-bottom">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra dolor eu nunc porttitor sollicitudin. Maecenas dignissim ultricies pharetra.</p>
+                                    <p>{{$item->description}}</p>
                                 </div><!-- /.portfolio-info-bottom -->
                             </div><!-- /.portfolio-info  -->
                         </a>
                     </div><!-- /.col-lg-fifth  -->
-                    <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["branding"]'>
+                    @endforeach
+
+                    {{-- <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["branding"]'>
                         <a class="portfolio-link" href="#">
                             <img src="assets/img/portfolio-2.jpg" alt="" class="img-carousel">
                             <div class="portfolio-info">
@@ -207,12 +210,12 @@
                                 </div><!-- /.portfolio-info-bottom -->
                             </div><!-- /.portfolio-info  -->
                         </a>
-                    </div><!-- /.col-lg-fifth  -->
+                    </div><!-- /.col-lg-fifth  --> --}}
 
             	</div><!-- /#grid -->
 
             </div>
-            
+
         </section><!-- /.portfolio -->
 
         <section class="site-section-small section-work-with-us yellow-bg text-center">
@@ -223,7 +226,7 @@
                 <a class="btn" href="#">Start Now</a>
 
             </div>
-            
+
         </section><!-- /.section-work-with-us -->
 
         <section class="social-networks">
@@ -236,15 +239,15 @@
                     <a class="white-text gray-bg facebook-bg" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     <a class="white-text black-bg google-plus-bg" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     <a class="white-text gray-bg message-bg" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
- 
+
                 </div>
-                
+
             </div>
-            
+
         </section><!-- /.social-networks -->
 
     </main><!-- /.site-main -->
 
-    @include('partials.footer')
+
 
 @endsection

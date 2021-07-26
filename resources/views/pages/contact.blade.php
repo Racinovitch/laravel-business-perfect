@@ -1,4 +1,7 @@
-@include('partials.header')
+@extends('template.main')
+@section('content')
+
+
 
 <div class="hero hero-max-720 hero-contact background-overlay">
 
@@ -27,7 +30,7 @@
                     <div class="get-in-touch">
 
                         <h2 class="section-title">Get in touch</h2>
-                        <p class="small-title mb-50">Just a note on how wonderful this theme is! If you are thinking of purchasing, i'd say do it! The flexibility is awesome possibilities are endless.</p> 
+                        <p class="small-title mb-50">Just a note on how wonderful this theme is! If you are thinking of purchasing, i'd say do it! The flexibility is awesome possibilities are endless.</p>
 
                         <ul class="list-unstyled mb-0">
                             <li>BusinessPerfect</li>
@@ -62,13 +65,13 @@
                     </form><!-- /.contact-form -->
 
                 </div>
-                
-            </div>     
-        
+
+            </div>
+
         </div>
 
     </div>
-    
+
 </section><!-- /.section-contact-us -->
 
 
@@ -85,11 +88,11 @@
             <a class="white-text gray-bg message-bg" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 
         </div>
-        
+
     </div>
-    
+
 </section><!-- /.social-networks -->
 
 </main><!-- /.site-main -->
 
-@include('partials.footer')
+@endsection
