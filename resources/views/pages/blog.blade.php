@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section ('content')
-@include('partials.header')
+@include('partials.header2')
 
 <main id="main" class="site-main">
 
@@ -25,35 +25,25 @@
 
             <div class="col-md-9">
 
-                <div class="blog-post">
-
-                    <a href="blog-post.html"><img class="img-carousel post-img" src="assets/img/portfolio-1.jpg" alt=""></a>
-
-                    <div class="post-content">
-
-                        <h3><a class="post-title" href="blog-post.html">Is Passion Good For Business?</a></h3>
-
-                                
-                        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               
+                @foreach($dataBlog as $item)
                         
-                    </div><!-- /.post-content -->
+                        <div class="blog-post">
 
-                </div><!-- /.blog-post -->
-                <div class="blog-post">
+                            <a href="blog-post.html"><img class="img-carousel post-img" src="{{asset($item->image)}}" alt=""></a>
 
-                    <a href="blog-post.html"><img class="img-carousel post-img" src="assets/img/portfolio-1.jpg" alt=""></a>
+                            <div class="post-content">
 
-                    <div class="post-content">
+                                <h3><a class="post-title" href="blog-post.html">{{$item->titre}}</a></h3>
 
-                        <h3><a class="post-title" href="blog-post.html">Is Passion Good For Business?</a></h3>
+                
+                                <p class="section-text">{{$item->description}}</p>
+        
+                            </div><!-- /.post-content -->
 
-                                
-                        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        
-                    </div><!-- /.post-content -->
-
-                </div><!-- /.blog-post -->
-
+                        </div><!-- /.blog-post -->
+                    
+                @endforeach
 
             </div>
         </div>
