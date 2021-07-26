@@ -1,7 +1,6 @@
 @extends('template.main')
-
+@include('partials/header2')
 @section ('content')
-
 
 <main id="main" class="site-main">
 
