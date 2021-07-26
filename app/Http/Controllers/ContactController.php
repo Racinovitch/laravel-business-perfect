@@ -11,4 +11,5 @@ class ContactController extends Controller
         $dataContact=Contact::all();
         return view('pages.contact',compact('dataContact'));
     }
+
 }
