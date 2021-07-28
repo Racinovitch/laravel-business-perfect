@@ -24,8 +24,5 @@ Route::get('/portfolio', [PortfolioController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
 
 Route::get('/blog', [BlogController::class, 'index']);
-
-
-Route::get('/backoff', function(){
-    return view('pages.createportfolio');
-});
+Route::post('/admin/blogs', [BlogController::class, 'store']);
+Route::get('/blogs/create', [BlogController::class, 'create']);

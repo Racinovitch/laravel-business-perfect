@@ -61,7 +61,7 @@
                         <input class="form-control" type="text" name="contact-subject" placeholder="Subject">
                         <textarea class="form-control" placeholder="Message *" required></textarea>
 
-                        <button class="btn btn-yellow">Submit</button>
+                        <button class="btn btn-primary">Submit</button>
                     </form><!-- /.contact-form -->
 
                 </div>
