@@ -4,9 +4,9 @@
 
     <div class="container-fluid">
 
-        <div class="navbar-header">
-            
-            <a href="{{asset('/')}}" class="site-title yellow-text">Business Perfect</a>
+        <div class="navbar-header"  >
+
+            <a href="{{asset('/')}}" class="site-title yellow-text" >Business Perfect</a>
 
         </div><!-- /.navbar-header -->
 
@@ -18,16 +18,16 @@
                     <a href="{{asset('/blog')}}">Blog </a>
                 </li>
                 <li>
-                    <a href="{{asset('/portfolio')}}">Portfolio</a>                                
+                    <a href="{{asset('/portfolio')}}">Portfolio</a>
                 </li>
                 <li class="active">
                     <a href="{{asset('/contact')}}">Contact</a>
-                </li> 
+                </li>
             </ul><!-- /.navbar-nav -->
         </div><!-- /.navbar-collapse -->
-        
+
     </div>
-              
+
 </nav><!-- /.site-navigation -->
 
 </header><!-- /#masthead -->
