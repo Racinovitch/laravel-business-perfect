@@ -57,7 +57,7 @@
     <script src="{{asset('js/touchswipe.min.js')}}"></script>
     <script src="{{asset('js/skrollr.min.js')}}"></script>
     <script src="{{asset('js/jquery.countTo.min.js')}}"></script>
-    <script src="{{asset('js/script.js')}}"></script>
+    <script src="{{asset('js/script.js')}}"></script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
 </body>
 </html>
