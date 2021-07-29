@@ -1,7 +1,8 @@
 @extends('template.backoffice')
 
 @section('backoff')
-<form action="/blogs"  method="post" class="container "
+<h1 style="text-align: center;margin-top:4rem; color:orangered; text-decoration: underline; " class="container">Ajouter du contenu pour le Blog</h1>
+<form action="/admin/blogs"  method="post" class="container "
  style="margin-top: 5rem">
     @csrf
     <div class="mb-3">
@@ -21,7 +22,7 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
-  
+
 
 @endsection
 

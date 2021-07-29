@@ -12,20 +12,7 @@ class BlogController extends Controller
         return view('pages.blog',compact('dataBlog'));
     }
 
-    public function create(){
-        return view('pages.create_blogs');
-    }
 
-    public function store (Request $request){
-        $item = new Blog;
-        $item->titre = $request->titre;
-        $item->image = $request->image;
-        $item->description = $request->description;
-        $item->save();
-        return redirect()->back();
-
-
-    }
 
 
 

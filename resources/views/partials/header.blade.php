@@ -4,9 +4,9 @@
 
     <div class="container-fluid">
 
-        <div class="navbar-header"  >
+        <div class="navbar-header "  style="margin-top: 0.5rem" >
 
-            <a href="{{asset('/')}}" class="site-title yellow-text" >Business Perfect</a>
+            <a href="{{asset('/')}}" class="site-title yellow-text"  style="margin-top: 0.5rem">Business Perfect</a>
 
         </div><!-- /.navbar-header -->
 

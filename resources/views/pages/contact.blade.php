@@ -1,4 +1,5 @@
 @extends('template.main')
+@include('partials/header')
 @section('content')
 
 
