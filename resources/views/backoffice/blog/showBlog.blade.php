@@ -26,7 +26,7 @@
                 @csrf
                 <button class="btn btn-primary" type="submit" >Delete</button>
             </form>
-           <button  class="btn btn-primary" style="box-sizing:border-box;"><a style="width: 100%; height:100%; color:white; " href="{{route('edit', $data->id)}}">Edit</a></button>
+           <button  class="btn btn-primary" style="width:15%"><a style="width: 100%; height:100%; color:white; " href="{{route('edit', $data->id)}}">Edit</a></button>
         </div>
 
             </div>
