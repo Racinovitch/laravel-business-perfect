@@ -9,7 +9,7 @@
         <div class="col-sm-6 col-md-4" >
           <div class="thumbnail" style="padding: 0; height:100%">
 
-            <div class="caption" style="width: max-content;text-align: center; ; background-color:#FAEBD7; padding:0; height: 100%">
+            <div class="caption" style="width: max-content;text-align: center; background-color:#FAEBD7; padding:0; height: 100%">
               <h3 style="text-decoration:underline;margin-top:0; padding-top:0.4rem">{{$data->titre}}</h3>
 
               <textarea disabled style="width: 40rem;
@@ -26,7 +26,7 @@
                 @csrf
                 <button class="btn btn-primary" type="submit" >Delete</button>
             </form>
-           <button  class="btn btn-primary" style="width:15%"><a style="width: 100%; height:100%; color:white; " href="{{route('edit', $data->id)}}">Edit</a></button>
+           <a class="btn btn-primary" style=" width:15%; color:white; " href="{{route('edit', $data->id)}}">Edit</a>
         </div>
 
             </div>
