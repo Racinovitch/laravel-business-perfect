@@ -11,6 +11,7 @@
           <tr>
             <th scope="col">Nom</th>
             <th scope="col">Delete</th>
+
           </tr>
         </thead>
         <tbody>
@@ -18,6 +19,7 @@
             <tr>
                 <th scope="row"><a href="{{route("show", $item->id)}}">{{$item->titre}}</a></th>
                 <td> <form action="{{route('delete1', $item->id)}}" method="post"> @csrf<button type="submit" class="btn btn-primary">Delete</button></form></td>
+                 
             </tr>
             @endforeach
 

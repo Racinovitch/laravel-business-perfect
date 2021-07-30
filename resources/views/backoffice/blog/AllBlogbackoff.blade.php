@@ -15,8 +15,16 @@
 
                     <div class="caption" style="text-align: center; ; background-color:#FAEBD7; padding:0; height: 100%">
                       <h3 style="margin-top:0; padding-top:0.4rem">{{$item->titre}}</h3>
-                      <p>{{$item->description}}</p>
-                      <form action="{{route("delete", $item->id)}}" method="post" style="padding:0.8rem;width: 100%; margin:0; background-color:#DEB887; display:flex; justify-content:center; align-items:center; height:70%" >
+                      <textarea disabled style="width: 30rem;
+                      margin-bottom:1rem;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+
+        border:none;
+        background-color: none;
+        resize: none;">{{$item->description}}</textarea>
+                      <form action="{{route("delete", $item->id)}}" method="post" style="padding:0.8rem;width: 100%; margin:0; background-color:#DEB887; display:flex; justify-content:center; align-items:center; height:30%" >
                         @csrf
                         <button class="btn btn-primary" type="submit">Delete</button>
                     </form>

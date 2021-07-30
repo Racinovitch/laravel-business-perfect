@@ -41,4 +41,21 @@ class BlogBackController extends Controller
         $data = $id;
         return view('backoffice.blog.showBlog', compact("data"));
     }
+
+    public function edit(Blog $id){
+        $data = $id;
+       
+        return view('backoffice.blog.editBlog', compact("data"));
+    }
+
+    public function update(Blog $id, Request $request){
+
+        $blog = $id;
+
+        $blog->titre = $request->titre;
+        $blog->image = $request->image;
+        $blog->description = $request->description;
+        $blog->save();
+        return redirect('/admin/blog');
+    }
 }

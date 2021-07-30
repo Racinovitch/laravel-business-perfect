@@ -54,7 +54,12 @@ Route::post('/admin/blogs', [BlogBackController::class, 'store']);
 Route::post('/admin/blogs/{id}/delete',
 [BlogBackController::class, 'destroy'])->name('delete1');
 
-Route::get('/admin/home/{id}/show', [BlogBackController::class, 'show'])->name("show");
+Route::get('/admin/blogs/{id}/show', [BlogBackController::class, 'show'])->name("show");
+
+Route::get('/admin/blogs/{id}/edit', [BlogBackController::class, 'edit'])->name("edit");
+
+
+Route::put('/admin/blogs/{id}/update', [BlogBackController::class, 'update'])->name('update');
 
 
 // ? Controller Blog, tous les éléments
